@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Comments from "@/components/Comments";
 import Likes from "@/components/Likes";
 import Loading from "@/components/Loading";
@@ -10,7 +9,6 @@ export default function Blog() {
   console.log("blog page");
   return (
     <>
-      <Header />
       <div>
         blog page
         <ul className="flex flex-col gap-5">

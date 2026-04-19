@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-
 type PageProps = {
   params: {
     blogId: string;
@@ -51,9 +49,14 @@ export default async function Blog({ params }: PageProps) {
   const { blogId } = await params;
   console.log("blogId", blogId);
 
+  // error handling in the next js in server component
+  // if (blogId % 2 === 0) {
+  //   // console.log(object);
+  //   throw new Error("blog can be only the odd number ");
+  // }
+
   return (
     <>
-      <Header />
       <div>
         <h1 className="text-3xl">Welcome to Our Blog {blogId}</h1>
         <p>This is blog {blogId} page.</p>

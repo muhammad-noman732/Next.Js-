@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-
 type BlogProps = {
   params: {
     blogId: string;
@@ -12,7 +10,6 @@ async function Comments({ params }: BlogProps) {
 
   return (
     <>
-      <Header />
       <div>All comments for the {blogId} Blog</div>
     </>
   );

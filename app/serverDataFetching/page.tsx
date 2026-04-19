@@ -1,5 +1,4 @@
-import Header from "@/components/Header";
-
+// export const dynamic = "force-dynamic";
 interface Todos {
   userId: number;
   id: number;
@@ -56,9 +55,9 @@ export default async function Posts() {
   //   userResponse.json(),
   // ]);
 
+  console.log("todoData", todoData);
   return (
     <>
-      <Header />
       <section className="space-y-4 p-4">
         {/* {todos.map((item) => (
         <div
@@ -103,7 +102,7 @@ export default async function Posts() {
         <User />
       </Suspense> */}
 
-        {/* here usign the promise all */}
+        {/* here using the promise all */}
 
         <section className="space-y-8 p-4">
           {/* Todos Section */}

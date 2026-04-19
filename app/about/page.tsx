@@ -1,5 +1,5 @@
 "use client";
-import Header from "@/components/Header";
+import Nomi from "@/Nomi";
 
 export default function About() {
   console.log("about page");
@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <>
-      <Header />
+      <Nomi />
       <div className="bg-green-900 min-h-screen  p-20">
         <h1 className="text-3xl texh-gray-800 "> About page</h1>
         <p>we are the best </p>

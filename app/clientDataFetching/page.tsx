@@ -1,5 +1,4 @@
 "use client";
-import Header from "@/components/Header";
 import React, { useEffect, useState } from "react";
 
 function ClientDataFetching() {
@@ -24,7 +23,6 @@ function ClientDataFetching() {
   }, []);
   return (
     <>
-      <Header />
       <div>
         {posts.map((post) => (
           <div key={post.id}>

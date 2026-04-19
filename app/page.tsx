@@ -1,9 +1,9 @@
-import Header from "@/components/Header";
+// import { useTheme } from "@/context/ThemedContext";
 
-export default async function Home() {
+export default function Home() {
+  // db call
   return (
     <>
-      <Header />
       <div className="bg-green-900 min-h-screen  p-20">
         <h1 className="text-3xl texh-gray-800 "> Home page</h1>
         <p>welcome to our website</p>

@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-
 type FileProps = {
   params: {
     filePath: string[];
@@ -11,7 +9,6 @@ export default async function Files({ params }: FileProps) {
 
   return (
     <>
-      <Header />
       <div>
         File <li className="text-4xl text-strong">{filePath?.join("/")}</li>
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Link from "next/link";
+import ThemeProvider from "@/context/ThemedContext";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: {
@@ -16,7 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>
+          <Header></Header>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
