@@ -8,6 +8,8 @@ const navLinks = [
   { href: "/posts", label: "Posts" },
   { href: "/users", label: "Users" },
   { href: "/dashboard", label: "Dashboard" },
+  { href: "/search", label: "Search" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function Header() {
@@ -15,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur">
-      <nav className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
         <Link href="/" className="flex items-center gap-2">
           <span className="inline-block h-2.5 w-2.5 rounded-full bg-blue-600" />
           <span className="text-sm font-semibold tracking-wide text-slate-900 sm:text-base">
@@ -23,7 +25,7 @@ export default function Header() {
           </span>
         </Link>
 
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex items-center gap-2">
           {navLinks.map((link) => {
             const isActive =
               link.href === "/"
